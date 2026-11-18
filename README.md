@@ -50,9 +50,9 @@ Other learning modes cover GitLab CI/CD, GitHub Actions, Kubernetes, Terraform, 
 
 | File | Responsibility |
 | --- | --- |
-| [app.py](app.py) | Collects the learning mode and question, requests a structured answer, and displays the response. |
-| [agent.py](agent.py) | Selects the system prompt and calls the OpenAI Responses API with `gpt-4.1-mini`. |
-| [prompts.py](prompts.py) | Defines the instructions for each specialist mode and the default assistant. |
+| [app.py](app.py) | handles the student interaction; Collects the learning mode and question, requests a structured answer, and displays the response. |
+| [agent.py](agent.py) | connects the app to the model, Selects the system prompt and calls the OpenAI Responses API with `gpt-4.1-mini`. |
+| [prompts.py](prompts.py) | defines how each specialist responds - Defines the instructions for each specialist mode and the default assistant. |
 | [requirements.txt](requirements.txt) | Lists Streamlit, the OpenAI SDK, and python-dotenv. |
 
 Each submission triggers one model call. The app displays guidance and code examples for the student to review. Students run any suggested commands themselves.
